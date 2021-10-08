@@ -1,0 +1,119 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+body {
+    font-size: 18px;
+    background: #e8e8e8 url('./assets/images/arrows.png')50% 50px no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.motivation-section {
+    width: 1440px;
+    margin: 0 auto;
+}
+.wrapper {
+    width: 840px;
+    margin: 0 auto;
+}
+
+.welcoming-block {
+    text-align: center;
+}
+.welcoming-block__title {
+    font-size: 16px;
+    text-transform: uppercase;
+    opacity: 0.6;
+    letter-spacing: 1px;
+    padding: 120px 0 20px 0;
+}
+.welcoming-block__subtitle {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    color: #273d46;
+    line-height: 50px;
+}
+
+.motivation-photo {
+    width: 830px;
+    height: 550px;
+    box-shadow: 0 15px 65px rgba(15, 16, 16, 0.15);
+    background-color: #FFF;
+}
+.motivation-photo__image {
+    width: 820px;
+    height: 540px;
+    background: url('./assets/images/run-men.png')10px 10px no-repeat;
+}
+._motivation-photo-margin {
+    margin: 45px 0 65px 0;
+}
+
+.main-info__text {
+    width: 740px;
+    color: #606c71;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+    margin: 45px 45px 45px 45px;
+}
+
+.info-list__item li  {
+    background: url('./assets/images/check-icon.png') left no-repeat;
+    padding: 0 0 10px 35px;
+}
+._info-list-margin {
+    margin: 0 0 0 45px;
+}
+.info-list__item:nth-child(2) {
+    font-style: italic;
+    color: #80b7b3;
+}
+.info-list__item:nth-child(3){
+    font-weight: bold;
+}
+.info-list__item:nth-child(4) {
+    text-decoration: line-through;
+    color: #d5d7d7;
+}
+
+.info__link {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+
+    padding: 0 30px;
+
+    line-height: 50px;
+    color: #FFF;
+    background-color: #80b7b3;
+    box-shadow: 0px 7px 0px rgba(15, 16, 16, 0.65);
+    border-radius: 20px;
+    letter-spacing: 1px;
+}
+.info__link span {
+    padding: 0 30px 0 0;
+    background: url('./assets/images/aroow.svg') right no-repeat;
+}
+._info__link-margin {
+    margin: 45px 0 45px 45px;
+}
+.info__link:hover {
+    background-color: rgba(25, 31, 83, 0.75);
+}
+.info__link:active {
+    position: relative;
+    top: 3px;
+    box-shadow: 0px 4px 0px rgba(15, 16, 16, 0.65);
+}

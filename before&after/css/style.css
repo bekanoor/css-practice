@@ -1,0 +1,101 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+body{
+	background-color: #eaebe5;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+.wrapper {
+	width: 850px;
+	margin: 0 auto;
+}
+._list-positon {
+	margin-top: 125px;
+}
+.list {
+	color: #273d46;
+}
+.list__item {
+	position: relative;
+}
+.list__item::before {
+	content: '✔';
+	position: absolute;
+	left: -25px;
+	top: 0px;
+
+	color: #80b7b3;	
+}
+.list__item:hover::before {
+	content: '✔';
+	position: absolute;
+	left: -25px;
+	top: 0px;
+
+	color: #c24e54;	
+}
+.list__item p:hover {
+	color: #c24e54;
+	cursor: pointer;
+}
+.list__item--line--through {
+	text-decoration: line-through;
+}
+.list__item--bold {
+	font-weight: bold;
+}
+.list__item--italic {
+	font-style: italic;
+}
+.list__item--caps {
+	text-transform: uppercase;
+}
+.button-list {
+	margin-top: 85px;
+}
+.button-list__item {
+	height: 45px;
+	width: 200px;
+	border-radius: 55px;
+	background-color: #80b7b3;
+	color: #fff;
+	margin: 0px 0px 85px 50px;
+}
+.button-list__item::after {
+	content: '→';
+	padding: 0 0 0 10px;
+	font-size: 20px;
+}
+.button-list--point:hover {
+	background-color: #3a5856;
+}
+.button-list--click:hover {
+	background-color: #3a5856;
+}
+.button-list--click:focus {
+	background-color: #818181;
+}
+.text__item {
+	padding: 0 0 40px 0;
+}
+.text__item--first-line::first-line {
+	color: rgb(216, 96, 96);
+}
+.text__item--first-letter::first-letter {
+	color: rgb(116, 190, 103);
+}

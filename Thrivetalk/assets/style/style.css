@@ -1,0 +1,629 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: 'Larsseit';
+  src: url("../Larsseit-Thin.eot");
+  src: local("../Larsseit Thin"), local("../Larsseit-Thin"), url("../Larsseit-Thin.eot?#iefix") format("embedded-opentype"), url("../Larsseit-Thin.woff2") format("woff2"), url("../Larsseit-Thin.woff") format("woff"), url("../Larsseit-Thin.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  margin: 0px;
+  font-family: Larsseit;
+  font-size: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  width: 1437px;
+}
+
+.content-wrapper {
+  margin: 0 auto;
+  padding: 0px;
+  width: 1437px;
+}
+
+.thrivetalk {
+  background-color: #F4F9E2;
+  max-width: 1117px;
+}
+
+.logo-name {
+  font-size: 24px;
+  color: #62D0DF;
+  font-size: 24px;
+  line-height: 27px;
+  letter-spacing: -0.035em;
+  font-weight: bold;
+  margin-top: 27px;
+}
+
+._logo-name {
+  margin-left: 120px;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-around;
+  width: 708px;
+  height: 50px;
+  align-items: center;
+}
+
+.header-list {
+  margin-top: 27px;
+  display: flex;
+  justify-content: space-around;
+  width: 223px;
+}
+
+.header-item {
+  list-style-type: none;
+}
+
+.header-item__link {
+  position: relative;
+  font-family: "Larsseit";
+  font-size: 14px;
+  line-height: 16px;
+  color: #22356F;
+  text-decoration: none;
+  font-weight: 500;
+  z-index: 42;
+}
+
+.header-item__link-active {
+  font-weight: bold;
+  border-bottom: 1.5px solid;
+}
+
+.contact-us {
+  margin-top: 27px;
+  width: 150px;
+  height: 50px;
+  background: #62D0DF;
+  border-radius: 50px;
+  border: none;
+  color: #FFF;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.main-info-wrapper {
+  display: flex;
+  width: 1437px;
+}
+
+.main-info {
+  width: 484px;
+}
+
+.main-info-position {
+  margin: 164px 0px 75px 179px;
+}
+
+.main-info__title {
+  font-family: "Larsseit";
+  color: #22356F;
+  font-size: 48px;
+  line-height: 53px;
+  letter-spacing: -0.035em;
+  font-weight: bold;
+  width: 544px;
+}
+
+.main-info__subtitle {
+  font-family: "Larsseit";
+  color: #22356F;
+  font-size: 24px;
+  line-height: 42px;
+}
+
+.main-info__button {
+  background-color: #F9B640;
+  color: #FFF;
+  border: #FFF;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 63px;
+}
+
+.main-info__link {
+  display: inline;
+  width: 150px;
+  height: 50px;
+  padding-left: 38px;
+}
+
+.main-info__link a {
+  text-decoration: none;
+  color: #FAB63E;
+  font-size: 16px;
+  line-height: 23px;
+  align-items: center;
+}
+
+.main-images {
+  position: relative;
+  width: 1437px;
+  height: 100%;
+}
+
+.main-images__mask {
+  position: absolute;
+  top: -77px;
+  left: 70px;
+  z-index: 1;
+}
+
+.main-images__image {
+  position: absolute;
+  top: -72px;
+  left: 31px;
+  z-index: 2;
+}
+
+/*--------------------------------------------------------------*/
+.why-thrive {
+  display: flex;
+  background-color: #62D0DF;
+  max-width: 1437px;
+}
+
+.why-thrive-info {
+  min-width: 833px;
+  max-height: 604px;
+}
+
+._why-thrive-info {
+  margin: 151px 0px 0px 178px;
+}
+
+.why-thrive-info__title {
+  font-size: 36px;
+  line-height: 27px;
+  letter-spacing: -0.006em;
+  color: #FFFFFF;
+}
+
+.why-thrive-info__subtitle {
+  width: 555px;
+  margin-top: 75px;
+  font-size: 24px;
+  line-height: 35px;
+  color: #FFFFFF;
+}
+
+.why-thrive-info__subtitle--bold {
+  font-weight: bold;
+}
+
+.why-thrive-image {
+  position: relative;
+  top: 0px;
+  left: -99px;
+  width: 525px;
+  height: 604px;
+}
+
+/*--------------------------------------------------------------*/
+.about {
+  position: relative;
+}
+
+._about-us {
+  margin-left: 106px;
+}
+
+.about-us {
+  position: absolute;
+  counter-reset: #22356F;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+}
+
+.about-us-description {
+  width: 592px;
+  margin: 0 auto;
+}
+
+._about-us-description {
+  margin-top: 150px;
+}
+
+.about-us__title {
+  color: #22356F;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0.005em;
+}
+
+.about-us__subtitle {
+  color: rgba(34, 53, 111, 0.5);
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding-top: 60px;
+  padding-bottom: 24px;
+}
+
+/*--------------------------------------------------------------*/
+.weight {
+  display: flex;
+  width: 100%;
+  height: 480px;
+}
+
+.weight-lifting__decor {
+  border: none;
+  background-color: #fff;
+  width: 255px;
+  color: #FFF;
+  height: 1px;
+}
+
+.weight-lifting__list {
+  margin: 0;
+  padding: 95px 50px 211px 78px;
+}
+
+.weight-lifting__text {
+  list-style-position: outside;
+  align-items: center;
+  list-style-type: none;
+  list-style-image: url(./assets/images/marker.png);
+  max-width: 230px;
+  font-size: 32px;
+  line-height: 34px;
+  letter-spacing: -0.006em;
+  color: #FFF;
+}
+
+.weight-lifting {
+  width: 360px;
+  height: 360px;
+}
+
+.weight-lifting--pink {
+  background-color: #FFE2DE;
+  background-size: contain;
+}
+
+.weight-lifting--green {
+  background-color: #C4E769;
+}
+
+.weight-lifting--blue {
+  background-color: #62D0DF;
+}
+
+.weight-lifting--dark-blue {
+  background-color: #0052C1;
+}
+
+/*--------------------------------------------------------------*/
+.health {
+  width: 1440px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.health-item {
+  width: 480px;
+  height: 480px;
+}
+
+.health-item__decor {
+  margin: 70px 70px 0px 70px;
+  border: none;
+  background-color: #fff;
+  width: 340px;
+  color: #FFF;
+  height: 1px;
+}
+
+.health-item__item {
+  color: #FFFFFF;
+  font-size: 32px;
+  line-height: 34px;
+  letter-spacing: -0.006em;
+  list-style-image: url(./assets/images/marker.png);
+  margin: 30px 219px 282px 104px;
+}
+
+.health-item--dark-blue {
+  background-color: #22356F;
+}
+
+.health-item--blue {
+  background-color: #0052C1;
+}
+
+.health-item--pink {
+  background-image: url("/assets/images/health-back.png");
+}
+
+.health-item--light-green {
+  background-color: #62D0DF;
+}
+
+.health-item--gray {
+  background-color: #DEE1FF;
+}
+
+.health-item--orange {
+  background-color: #E9B730;
+}
+
+/*--------------------------------------------------------------*/
+.about-training {
+  margin-top: 22px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-training .training-content {
+  width: 479px;
+  height: 240px;
+}
+
+.about-training .training-content .training-content__title {
+  font-family: "Larsseit";
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: -0.03em;
+  color: #22356F;
+  padding: 55px 141px 28px 105px;
+}
+
+.about-training .training-content .training-content__subtitle {
+  font-family: "Larsseit";
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: -0.03em;
+  color: rgba(34, 53, 111, 0.5);
+  padding: 0 77px 37px 105px;
+}
+
+/*--------------------------------------------------------------*/
+.get-help {
+  display: flex;
+  margin-top: 40px;
+}
+
+.get-help-photo {
+  width: 480px;
+  height: 800px;
+}
+
+.get-help-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.get-help-container__title {
+  font-family: "Larsseit";
+  line-height: 12px;
+  letter-spacing: 0.06em;
+  color: #22356F;
+  padding: 105px 0 0 106px;
+}
+
+.get-help-container__subtitle {
+  width: 676px;
+  height: 215px;
+  font-family: "Larsseit";
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 53px;
+  letter-spacing: -0.01em;
+  color: #22356F;
+  margin-left: 106px;
+}
+
+.get-help-container__subtitle--color {
+  color: #62D0DF;
+}
+
+.get-help-container__bottom-text {
+  font-family: "Larsseit";
+  font-size: 16px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1em;
+  color: #FAB63E;
+  margin: 0 0 40px 106px;
+}
+
+/*--------------------------------------------------------------*/
+.contact-us-section {
+  display: flex;
+}
+
+.contact-us-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  background: #22356F;
+  color: #FFF;
+  font-family: "Larsseit";
+  padding-left: 180px;
+}
+
+.contact-us-block__top-text {
+  line-height: 12px;
+  letter-spacing: 0.06em;
+  padding-top: 103px;
+}
+
+.contact-us-block__middle-text-caps {
+  width: 600px;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 94px;
+  letter-spacing: -0.01em;
+  padding-top: 170px;
+}
+
+.contact-us-block__middle-text {
+  width: 540px;
+  font-size: 36px;
+  line-height: 53px;
+  letter-spacing: -0.005em;
+}
+
+.contact-us-block__bottom-text {
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  color: #62D0DF;
+}
+
+.contact-us-image {
+  width: 480px;
+  height: 800px;
+}
+
+/*--------------------------------------------------------------*/
+.footer-content {
+  display: flex;
+}
+
+.footer-content__photo {
+  width: 570px;
+  height: 380px;
+}
+
+.footer-content__information {
+  display: flex;
+  width: 765px;
+  padding: 98px 40px 74px 68px;
+}
+
+.footer-content-block {
+  width: 240px;
+}
+
+.footer-content-list__item:nth-child(1) {
+  height: 48px;
+  font-family: "Larsseit";
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 11px;
+  letter-spacing: -0.006em;
+  color: #22356F;
+  padding: 0 0 20px 0;
+}
+
+.footer-content-list__item:nth-child(2), .footer-content-list__item:nth-child(3), .footer-content-list__item:nth-child(4) {
+  font-family: "Larsseit";
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: -0.006em;
+  color: rgba(34, 53, 111, 0.5);
+  padding: 0 0 5px 0;
+}
+
+.footer-content-list__link {
+  color: rgba(34, 53, 111, 0.5);
+}
+
+.footer-content-list__link:hover {
+  color: #22356f;
+}
+
+.footer-content-list__link:visited {
+  color: #4a67bd;
+}
+
+.footer-end {
+  height: 80px;
+  background: #62D0DF;
+  color: #FFF;
+  font-family: "Larsseit";
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 11px;
+  letter-spacing: -0.006em;
+  padding: 32px 0 26px 196px;
+}
